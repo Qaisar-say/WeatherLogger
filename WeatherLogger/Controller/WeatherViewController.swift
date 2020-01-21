@@ -35,11 +35,20 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
-        Networking.instence.fetch { (complete) in
-            if complete{
-                self.tableView.reloadData()
+        if Connectivity.isConnectedToInternet(){
+                Networking.instence.fetch { (complete) in
+                            if complete{
+                                self.tableView.reloadData()
+                            }
+                        }
+            } else {
+                
+                let alert = UIAlertController(title: "Connection Error?", message: "Not Connected.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true)
             }
-        }
+        
+
     }
     
     //Mark: - Location manager delegate methods
@@ -63,6 +72,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func Save(_ sender: UIButton) {
+        if Connectivity.isConnectedToInternet(){
         Networking.instence.getWeatherData(url: WEATHER_URL, parameters: params, completion: { (success) in
             Networking.instence.fetch { (complete) in
                 if complete{
@@ -70,8 +80,14 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
                 }
             }
         })
-        
+        } else {
+    let alert = UIAlertController(title: "Connection Error?", message: "Not Connected.", preferredStyle: .alert)
+                       alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                       self.present(alert, animated: true)
+    
     }
+  }
+    
 }
 
 //Mark: - TableView Delegate Methods

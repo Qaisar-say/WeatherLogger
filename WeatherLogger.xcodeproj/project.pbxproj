@@ -21,6 +21,7 @@
 		4209A3FE23CDEA4B00075A4E /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4209A3FD23CDEA4B00075A4E /* Networking.swift */; };
 		4209A40123CDEC8100075A4E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4209A40023CDEC8100075A4E /* Constant.swift */; };
 		4209A40323CDF3C200075A4E /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4209A40223CDF3C200075A4E /* WeatherTableViewCell.swift */; };
+		42B5DB5B23D6EDED00407466 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B5DB5A23D6EDED00407466 /* Connectivity.swift */; };
 		A452103E4F56DA754F75ECA3 /* Pods_WeatherLoggerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3F6AE97A59047AC7278DAA /* Pods_WeatherLoggerTests.framework */; };
 		B6566A3C1CB6009B85EE63CD /* Pods_WeatherLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA089BC5E953EEE9E0732D7C /* Pods_WeatherLogger.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		4209A3FD23CDEA4B00075A4E /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		4209A40023CDEC8100075A4E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		4209A40223CDF3C200075A4E /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		42B5DB5A23D6EDED00407466 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		49428262AAA56F09ECC8D581 /* Pods-WeatherLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherLogger.debug.xcconfig"; path = "Target Support Files/Pods-WeatherLogger/Pods-WeatherLogger.debug.xcconfig"; sourceTree = "<group>"; };
 		6D8F51FF8257F21CC1151A40 /* Pods-WeatherLoggerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherLoggerTests.debug.xcconfig"; path = "Target Support Files/Pods-WeatherLoggerTests/Pods-WeatherLoggerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		745DCF73C49D4D54D7335A1F /* Pods_WeatherLogger_WeatherLoggerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherLogger_WeatherLoggerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +174,7 @@
 				4209A3C823CDA49400075A4E /* WeatherViewController.swift */,
 				4209A40223CDF3C200075A4E /* WeatherTableViewCell.swift */,
 				420559FE23D1D16C00AA2B4B /* WeatherDetailViewController.swift */,
+				42B5DB5A23D6EDED00407466 /* Connectivity.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 			files = (
 				4209A40323CDF3C200075A4E /* WeatherTableViewCell.swift in Sources */,
 				4209A40123CDEC8100075A4E /* Constant.swift in Sources */,
+				42B5DB5B23D6EDED00407466 /* Connectivity.swift in Sources */,
 				420559FF23D1D16C00AA2B4B /* WeatherDetailViewController.swift in Sources */,
 				4209A3C923CDA49400075A4E /* WeatherViewController.swift in Sources */,
 				4209A3C523CDA49300075A4E /* AppDelegate.swift in Sources */,
