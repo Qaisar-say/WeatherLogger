@@ -112,7 +112,7 @@ extension WeatherViewController: UITableViewDelegate,UITableViewDataSource{
         return 1
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        //just new comment
+        //row height added.
         return 180
     }
     
